@@ -6,3 +6,21 @@
     text-align: center;
     color: green;
 }
+div {
+    width: 30%;
+}
+.red-box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.green-box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.blue-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

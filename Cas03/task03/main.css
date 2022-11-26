@@ -19,7 +19,9 @@ div {
     background-color: green;
 }
 .blue-bg {
-   
+   position: absolute;
+   top: 0;
+   right: 0;
     background-color: blue;
 }
 .box {

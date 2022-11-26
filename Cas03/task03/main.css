@@ -10,9 +10,18 @@ div {
     width: 30%;
 }
 .red-bg {
-   
+ position: absolute;
     background-color: red;
+    right: 10px;
+  bottom: 0;
 
+}
+.parent{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    border: 2px solid black;
+   
 }
 .green-bg {
     
@@ -20,8 +29,8 @@ div {
 }
 .blue-bg {
    position: absolute;
-   top: 0;
-   right: 0;
+   top: 0%;
+   right: 0%;
     background-color: blue;
 }
 .box {

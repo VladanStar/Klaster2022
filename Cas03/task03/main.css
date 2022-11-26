@@ -1,0 +1,8 @@
+.green {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-align: center;
+    color: green;
+}

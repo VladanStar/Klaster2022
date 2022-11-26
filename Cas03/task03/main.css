@@ -9,18 +9,21 @@
 div {
     width: 30%;
 }
-.red-box {
-    width: 100px;
-    height: 100px;
+.red-bg {
+   
     background-color: red;
+
 }
-.green-box {
-    width: 100px;
-    height: 100px;
+.green-bg {
+    
     background-color: green;
 }
-.blue-box {
+.blue-bg {
+   
+    background-color: blue;
+}
+.box {
     width: 100px;
     height: 100px;
-    background-color: blue;
+    margin: 10px;
 }

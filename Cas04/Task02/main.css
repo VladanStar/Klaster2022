@@ -1,0 +1,23 @@
+.menu li {
+  padding: 10px;
+}
+.menu {
+  display: flex;
+}
+.menu li a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.proizvod a {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+}
+.proizvod a:hover {
+    background-color:white;
+    color:red;
+    border: 2px solid black;
+}

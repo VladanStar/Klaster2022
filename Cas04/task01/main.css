@@ -7,8 +7,8 @@
   /* flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; */
-
-  flex-direction: column;
+/* 
+  flex-direction: column; */
   justify-content: flex-start;
   align-items: center;
 }
@@ -19,17 +19,20 @@
 }
 .green {
   background-color: green;
-  align-self:flex-end;
+  /* align-self:flex-end; */
 }
 .blue {
   background-color: blue;
-  align-self: start;
+  /* align-self: start; */
 }
 .red {
   background-color: red;
-  align-self:flex-end;
+  /* align-self:flex-end; */
+  order: 2;
+  align-self: start;
 }
 .yellow {
   background-color: yellow;
-  align-self: start;
+  /* align-self: start;
+} */
 }

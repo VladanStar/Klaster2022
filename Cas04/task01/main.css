@@ -22,6 +22,7 @@
 }
 .blue {
   background-color: blue;
+  align-self: start;
 }
 .red {
   background-color: red;

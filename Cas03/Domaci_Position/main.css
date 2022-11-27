@@ -1,0 +1,35 @@
+.parent {
+    width: 60%;
+    height: 70vh;
+    position: relative;
+    margin:10px auto;
+    border: 2px solid black;
+}
+.parent >div {
+    width: 100px;
+    height: 100px;
+}
+.green {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: green;
+}
+.blue {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    background-color: blue;
+}
+.red {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: red;
+}
+.yellow {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: yellow;
+}

@@ -1,34 +1,31 @@
 .parent {
-    width: 60%;
-    height: 70vh;
-   display: flex;
-    margin:10px auto;
-    border: 2px solid black;
-    /* flex-wrap: wrap;
+  width: 60%;
+  height: 70vh;
+  display: flex;
+  margin: 10px auto;
+  border: 2px solid black;
+  /* flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; */
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: flex-end;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.parent >div {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
+.parent > div {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
 }
 .green {
-   
-    background-color: green;
+  background-color: green;
 }
 .blue {
-    
-    background-color: blue;
+  background-color: blue;
 }
 .red {
-    
-    background-color: red;
+  background-color: red;
 }
 .yellow {
-    
-    background-color: yellow;
+  background-color: yellow;
 }

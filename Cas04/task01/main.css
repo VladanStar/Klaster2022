@@ -19,6 +19,7 @@
 }
 .green {
   background-color: green;
+  align-self:flex-end;
 }
 .blue {
   background-color: blue;
@@ -26,7 +27,9 @@
 }
 .red {
   background-color: red;
+  align-self:flex-end;
 }
 .yellow {
   background-color: yellow;
+  align-self: start;
 }

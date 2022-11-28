@@ -3,13 +3,11 @@
 }
 .menu {
   display: flex;
-  position: relative;
 }
-
 .menu li a {
   text-decoration: none;
 }
-.show > a {
+.show a ul {
   position: relative;
 }
 ul {

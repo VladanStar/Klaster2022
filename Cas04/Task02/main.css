@@ -10,18 +10,4 @@
 ul {
   list-style: none;
 }
-.products a:hover {
-  background-color: red;
-  color: white;
-  border: 2px solid black;
-  padding: 10px;
-}
-.products a {
-  background-color: white;
-  color: red;
-  border: 2px solid black;
-  display: none;
-}
-.show:hover .products {
-  display: block;
-}
+

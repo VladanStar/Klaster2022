@@ -21,7 +21,7 @@ ul {
   display: block;
 }
 .products a:hover {
-  background-color: #ddd;
+  background-color:azure;
 }
 
 .show:hover .products {

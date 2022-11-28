@@ -7,21 +7,19 @@
 .menu li a {
   text-decoration: none;
 }
-.show a ul {
-  position: relative;
-}
+
 ul {
   list-style: none;
 }
 .products {
   display: none;
-  position: absolute;
+  position: relative;
 }
 .products li {
   display: block;
 }
 .products a:hover {
-  background-color:azure;
+  background-color: azure;
 }
 
 .show:hover .products {

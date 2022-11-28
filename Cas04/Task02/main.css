@@ -4,13 +4,12 @@
 .menu {
   display: flex;
   position: relative;
-
 }
 
 .menu li a {
   text-decoration: none;
 }
-.show >a {
+.show > a {
   position: relative;
 }
 ul {
@@ -22,11 +21,15 @@ ul {
 }
 .products li {
   display: block;
-  
 }
-.products a:hover {background-color: #ddd;}
+.products a:hover {
+  background-color: #ddd;
+}
 
-.show:hover .products {display: block;}
+.show:hover .products {
+  display: block;
+}
 
-.products:hover .menu {background-color: red;
+.products:hover .menu {
+  background-color: red;
 }

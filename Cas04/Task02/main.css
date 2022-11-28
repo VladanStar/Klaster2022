@@ -10,6 +10,9 @@
 .menu li a {
   text-decoration: none;
 }
+.show >a {
+  position: relative;
+}
 ul {
   list-style: none;
 }
@@ -19,10 +22,11 @@ ul {
 }
 .products li {
   display: block;
+  
 }
 .products a:hover {background-color: #ddd;}
 
-.menu:hover .products {display: block;}
+.show:hover .products {display: block;}
 
 .products:hover .menu {background-color: red;
 }

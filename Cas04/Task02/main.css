@@ -3,11 +3,26 @@
 }
 .menu {
   display: flex;
+  position: relative;
+
 }
+
 .menu li a {
   text-decoration: none;
 }
 ul {
   list-style: none;
 }
+.products {
+  display: none;
+  position: absolute;
+}
+.products li {
+  display: block;
+}
+.products a:hover {background-color: #ddd;}
 
+.menu:hover .products {display: block;}
+
+.products:hover .menu {background-color: red;
+}

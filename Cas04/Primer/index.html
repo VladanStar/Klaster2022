@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .dropbtn {
+        background-color: #04aa6d;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #3e8e41;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      .menu {
+        display: flex;
+      }
+
+      a {
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      a:hover {
+        background-color: white;
+        color: red;
+        border: 2px solid black;
+      }
+
+      .products {
+        display: none;
+      }
+
+      .menu  li {
+        /* padding: 5px 10px 3px 4px; */
+        /* top right bottom left  */
+        /* padding: 5px 10px; */
+        padding: 5px;
+
+      }
+      .show:hover .products {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    
+   <!-- Primer navigacije -->
+   <ul class="menu">
+        <li><a href="">Pocetna</a></li>
+        <li><a href="">O nama</a></li>
+        <li class="show">
+            <a href="">Proizvodi</a>
+            <ul class="products">
+                <li>Proizvod 1</li>
+                <li>Proizvod 2</li>
+                <li>Proizvod 3</li>
+            </ul>
+        </li>
+        <li><a href="">Kontakt</a></li>
+   </ul>
+
+
+
+
+
+
+
+
+    <!-- <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <div style="background-color: yellow;">
+       ovo je div 
+    </div>
+    <p style="background-color: aquamarine ">ovo je paragraf</p>
+    <span style="background-color: red">Ovo je span</span> -->
+  </body>
+</html>

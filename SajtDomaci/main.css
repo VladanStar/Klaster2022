@@ -17,54 +17,53 @@ nav {
   position: fixed;
   background: linear-gradient(#e66465, #9198e5);
   align-items: center;
-  padding-bottom: 0px;
   padding-left: 5%;
   padding-right: 5%;
 }
-
 .fleks li {
   list-style-type: none;
 }
 ul {
-    list-style: none;
- 
+  list-style: none;
 }
 ul li {
-    display:inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 ul li a {
-    display: block;
-    padding: 20px 25px;
-    color: #FFF;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
+  display: block;
+  padding: 20px 25px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
 }
 ul li ul.dropdown li {
-    display: block;
+  display: block;
 }
 ul li ul.dropdown {
-    width: 100%;
-    background-color: #22438C;
-    position: absolute;
-    z-index: 9;
-    display: none;
+  width: 200px;
+  background-color: #22438c;
+  position: absolute;
+  z-index: 9;
+  display: none;
 }
 ul li a:hover {
-    background-color: #9198e5;
+  background-color: #9198e5;
+  color: darkblue;
+  font-weight: bolder;
 }
 ul li:hover ul.dropdown {
-    display: block;
+  display: block;
 }
 .logo a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: darkblue;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: darkblue;
 }
 .navigation {
-    margin: auto;
+  margin: auto;
 }
 .navigation a {
   text-decoration: none;
@@ -74,6 +73,7 @@ ul li:hover ul.dropdown {
   margin: 3px;
   color: whitesmoke;
   font-weight: bolder;
+  width: 120px;
 }
 .fleks {
   display: flex;

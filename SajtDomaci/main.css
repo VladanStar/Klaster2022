@@ -75,6 +75,9 @@ ul li:hover ul.dropdown {
   font-weight: bolder;
   width: 120px;
 }
+.dropdown a {
+    width: 200px;
+}
 .fleks {
   display: flex;
   justify-content: center;

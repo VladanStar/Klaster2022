@@ -125,20 +125,26 @@ p {
 }
 .footer {
   background-color: rgb(175, 54, 175);
-  display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 70px;
 }
+.fafa {
+  text-align: end;
+ 
+}
 
 .fa {
-  display: flex;
-  padding: 10px;
   text-decoration: none;
+  text-align: end;
+  padding: 3px;
+  margin-right: 5px;
 }
 .fa:hover {
   opacity: 0.7;
 }
 .text-white {
   color: antiquewhite;
+  text-align: center;
+  padding: 10px;
 }

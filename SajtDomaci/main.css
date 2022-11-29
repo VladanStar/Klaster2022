@@ -25,12 +25,50 @@ nav {
 .fleks li {
   list-style-type: none;
 }
+ul {
+    list-style: none;
+ 
+}
+ul li {
+    display:inline-block;
+    position: relative;
+}
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background-color: #22438C;
+    position: absolute;
+    z-index: 9;
+    display: none;
+}
+ul li a:hover {
+    background-color: #9198e5;
+}
+ul li:hover ul.dropdown {
+    display: block;
+}
+.logo a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+}
 .navigation {
     margin: auto;
 }
 .navigation a {
   text-decoration: none;
-  padding: 10px;
+  padding: 12px;
   border: 2px solid red;
   background-color: rebeccapurple;
   margin: 3px;

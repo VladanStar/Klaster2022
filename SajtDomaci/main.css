@@ -9,21 +9,34 @@
 .logo img {
     width: 150px;
     height: 130px;
-   padding: 20px;
 }
 nav {
+    display: flex;
     width: 100%;
     height: 30vh;
     position: fixed;
     background: linear-gradient(#e66465, #9198e5);
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-.logo .navigation {
+
+.fleks li {
+list-style-type: none;
+width: 180px;
+}
+.fleks a {
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: rebeccapurple;
+    margin: 3px;
+    color: whitesmoke;
+    font-weight: bolder;
+   
+}
+.fleks {
     display: flex;
 }
 

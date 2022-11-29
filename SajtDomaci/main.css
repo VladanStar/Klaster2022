@@ -44,6 +44,27 @@ nav {
 .dropdown a {
   width: 200px;
 }
+.dropdown {
+    position: absolute;
+    background-color: #4951a1;
+    width: 140px;
+    left: 0;
+    display: none;
+}
+.submenu {
+    position: absolute;
+    left: 100%;
+    width: 140px;
+    top: 0;
+    background-color: #3B5998;
+    display: none;
+}
+.menu li:hover > .dropdown {
+    display: block;
+}
+.dropdown li:hover > .submenu {
+    display: block;
+}
 .fleks {
   display: flex;
   justify-content: center;

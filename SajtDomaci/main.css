@@ -11,6 +11,7 @@
 .logo img {
   width: 130px;
   height: 110px;
+  margin: auto;
 }
 nav {
   display: flex;

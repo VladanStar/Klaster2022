@@ -148,3 +148,21 @@ p {
   text-align: center;
   padding: 10px;
 }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    color: white;
+    background: violet;
+  }
+  .fa-github {
+    color: white;
+    background: black;
+  }

@@ -143,21 +143,14 @@ p {
   width: 700px;
   height: 70%;
   margin: auto;
-  border-radius: 15px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-sizing: border-box;
 }
 .image-wrap {
   overflow: hidden;
   margin: 8px;
-
-  /* width: 100%; */
 }
-
-.image-wrap img {
-  transition: all 0.3s;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
 .image-wrap:hover img {
   transform: scale(1.2) rotate(360deg);
   border-radius: 15px;

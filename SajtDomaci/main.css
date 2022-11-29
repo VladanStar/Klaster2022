@@ -128,9 +128,13 @@ p {
     background-color: rgb(175, 54, 175);
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     height: 70px;
    
+ }
+ .fa {
+    padding: 10px;
+    justify-self: flex-end;
  }
  .text-white {
     color: antiquewhite;

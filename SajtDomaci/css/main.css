@@ -120,8 +120,6 @@ ul li:hover ul.dropdown {
 }
 .box {
   text-align: center;
-  align-self: center;
-  justify-self: center;
   padding: 5%;
 }
 .box h2,
@@ -147,7 +145,7 @@ p {
 .image-wrap img {
   width: 700px;
   height: 70%;
-  margin: auto;
+  margin: 10px auto;
   border-radius: 50%;
   transition: all 0.3s;
   box-sizing: border-box;
@@ -155,7 +153,7 @@ p {
 }
 .image-wrap {
   overflow: hidden;
-  margin: 8px;
+  /* margin: 8px; */
 }
 .image-wrap:hover img {
   transform: scale(1) rotate(360deg);

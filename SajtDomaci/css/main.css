@@ -178,9 +178,7 @@ p {
 }
 .fa {
   text-decoration: none;
-  text-align: end;
-  padding: 3px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 .fa:hover {
   opacity: 0.7;
@@ -191,18 +189,18 @@ p {
   padding: 10px;
 }
 .fa-facebook {
-  background: #32539b;
+  background: #2a4e9b;
   color: white;
 }
 
 /* Twitter */
 .fa-twitter {
-  background: #55acee;
+  background: #3879aa;
   color: white;
 }
 .fa-instagram {
   color: white;
-  background: violet;
+  background: rgb(218, 96, 218);
 }
 .fa-github {
   color: white;

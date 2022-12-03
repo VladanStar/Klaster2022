@@ -4,3 +4,26 @@
 main{
     background-color: var(--color-blue);
 } */
+.blue-bg {
+  background-color: yellow;
+  box-sizing: border-box;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red-bg {
+  background-color: red;
+  box-sizing: content-box;
+  padding: 50px;
+}
+.box {
+    border: 3px solid black;
+    width: 500px;
+    height: 300px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,21 @@
 .grid {
     display: grid;
-    grid-template-columns: 20% 20% 20% ;
-    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 200px 200px 200px;
+
+}
+.item-a {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    background-color: yellow;
+}
+.item-c {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    background-color: palegoldenrod;
+}
+.item-b {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: orangered;
 }

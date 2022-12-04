@@ -5,7 +5,6 @@
 /*
  * Custom translucent site header
  */
-
 .site-header {
   background-color: rgba(0, 0, 0, .85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -19,7 +18,9 @@
   color: #fff;
   text-decoration: none;
 }
-
+img {
+ 
+}
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */

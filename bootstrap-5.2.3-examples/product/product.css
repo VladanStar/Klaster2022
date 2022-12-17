@@ -18,8 +18,8 @@
   color: #fff;
   text-decoration: none;
 }
-img {
- 
+a {
+  text-decoration: none;color: red !important;
 }
 /*
  * Dummy devices (replace them with your own or something else entirely!)

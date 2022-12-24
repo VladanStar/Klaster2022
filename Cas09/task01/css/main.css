@@ -8,6 +8,9 @@ ul {
   margin: 0 auto;
   max-width: 960px;
 }
+.text-centar {
+    text-align: center;
+}
 .header {
   display: flex;
   justify-content: space-between;

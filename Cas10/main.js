@@ -25,8 +25,8 @@ console.log(fullName);
 let b = 34;
 b = 22;
 console.log(a + b);
- const c = 23;
+const c = 23;
 //  c =22;
- console.log(b +c);
+console.log(b + c);
 //  const c = 24;
- b = 9
+b = 9;

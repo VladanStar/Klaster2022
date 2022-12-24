@@ -13,3 +13,10 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
+.section-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-cards .card {
+    flex-basis: 30%;
+}

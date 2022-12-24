@@ -1,0 +1,15 @@
+* {
+    outline: 1px solid red;
+}
+ul {
+    list-style: none;
+}
+.container {
+    margin:  0 auto;
+    max-width: 960px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

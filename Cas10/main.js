@@ -12,4 +12,7 @@ console.log(10%3)
 
 console.log("string" + "java")
 console.log(true + true)
-console.log(true * true)
+console.log(true * true);
+console.log(true ===1)
+console.log(true  + 1)
+console.log(0 ===33)

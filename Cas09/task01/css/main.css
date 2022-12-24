@@ -1,27 +1,30 @@
 * {
-    outline: 1px solid red;
+  outline: 1px solid red;
 }
 ul {
-    list-style: none;
+  list-style: none;
 }
 .container {
-    margin:  0 auto;
-    max-width: 960px;
+  margin: 0 auto;
+  max-width: 960px;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .section-cards {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 .section-cards .card {
-    flex-basis: 30%;
+  flex-basis: 30%;
 }
-.section-text, .section-content, .section-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.section-text,
+.section-content,
+.section-top,
+.footer-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -17,12 +17,14 @@
 // document.getElementById("btn").onclick = calculateBMI;
 
 function calculateBMI() {
+   
   let kg = document.getElementById("kilo").value;
   let visina = document.getElementById("visina").value;
-  let bmi = kg / (visina * 2);
+  let bmi = kg / (visina * visina);
   let result = document.getElementById("result");
   result.innerHTML += `${bmi}`;
   console.log(bm);
+  preventDefault();
 }
 // console.log(bmi(kg, visina))
 

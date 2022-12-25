@@ -35,21 +35,21 @@ function calculateBMI() {
   let kg = document.getElementById("kilo").value;
   let visina = document.getElementById("visina").value;
   let bmi = kg / (visina * visina);
-//   let result = document.getElementById("result");
-//   result.innerHTML += `${bmi}`;
-alert("BMI je" + bmi)
+  //   let result = document.getElementById("result");
+  //   result.innerHTML += `${bmi}`;
+  alert("BMI je" + bmi);
   console.log(bmi);
   //    preventDefault();
 }
 // console.log(calculateBMI(23,123))
 // console.log(bmi(kg, visina))
 
-switch(dan) {
-    case"ponedeljak":
+switch (dan) {
+  case "ponedeljak":
     alert("Danas je ponedeljak");
     break;
-    case "utorak":
-    alert("Danas je utorak")
+  case "utorak":
+    alert("Danas je utorak");
 }
 age = 34;
-age >=18 ? console.log("Vi ste punoetin"): console.log("Niste punoletni");
+age >= 18 ? console.log("Vi ste punoetin") : console.log("Niste punoletni");

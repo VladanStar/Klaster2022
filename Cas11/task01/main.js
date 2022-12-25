@@ -16,17 +16,29 @@
 // alert(`"Vi i mate  " ${starost} " godina";`);
 // document.getElementById("btn").onclick = calculateBMI;
 
+function calculateBMI(kg, visina) {
+  //   let kg = document.getElementById('kilo').value;
+  //   let visina = document.getElementById('visina').value;
+  let bmi = kg / (visina * visina);
+  //   let result = document.getElementById('result');
+  //   result.innerHTML += `${bmi}`;
+  console.log(bmi);
+  //   preventDefault();
+}
+console.log(calculateBMI(23, 123));
+// console.log(bmi(kg, visina))
+
+// console.log(bmi(kg, visina))
+//  let godine = prompt("Unesi svoje godine:");
+
 function calculateBMI() {
-   
   let kg = document.getElementById("kilo").value;
   let visina = document.getElementById("visina").value;
   let bmi = kg / (visina * visina);
   let result = document.getElementById("result");
   result.innerHTML += `${bmi}`;
-  console.log(bm);
-  preventDefault();
+  console.log(bmi);
+  //    preventDefault();
 }
+// console.log(calculateBMI(23,123))
 // console.log(bmi(kg, visina))
-
-// console.log(bmi(kg, visina))
-//  let godine = prompt("Unesi svoje godine:");

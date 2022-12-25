@@ -23,6 +23,15 @@ ul {
   margin: 0 auto;
   max-width: 960px;
 }
+.top-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.section-content {
+  /* display: flex; */
+  flex-direction: column;
+}
 .text-centar {
     text-align: center;
 }

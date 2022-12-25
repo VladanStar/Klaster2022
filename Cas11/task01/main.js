@@ -35,9 +35,9 @@ function calculateBMI() {
   let kg = document.getElementById("kilo").value;
   let visina = document.getElementById("visina").value;
   let bmi = kg / (visina * visina);
-  //   let result = document.getElementById("result");
-  //   result.innerHTML += `${bmi}`;
-  alert("BMI je" + bmi);
+  let result = document.getElementById("result");
+  result.innerHTML += `${bmi}`;
+  // alert("BMI je" + bmi);
   console.log(bmi);
   //    preventDefault();
 }

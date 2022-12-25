@@ -11,6 +11,6 @@ console.log(age, typeof age);
 // alert("zbir je " + zbir);
 
 let godina = 2022;
-let godRodjenja = prompt("Unesite godinu rodjenja:");
+let godRodjenja = Number(prompt("Unesite godinu rodjenja:"));
 let starost = godina - godRodjenja;
-alert("Vi i mate  " + starost) + " godina";
+alert(`"Vi i mate  " ${starost} " godina";`)

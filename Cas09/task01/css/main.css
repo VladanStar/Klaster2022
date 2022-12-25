@@ -40,9 +40,17 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.logo {
+  flex-basis: 40%;
+}
+.navigation {
+  flex-basis: 60%;
+}
 .section-cards {
   display: flex;
   justify-content: space-evenly;
+  text-align: center;
+  /* align-items: center; */
 }
 .section-cards .card {
   flex-basis: 30%;

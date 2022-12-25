@@ -53,3 +53,9 @@ switch (dan) {
 }
 age = 34;
 age >= 18 ? console.log("Vi ste punoetin") : console.log("Niste punoletni");
+var a = 12;
+function promena(){
+   var a =23;
+}
+promena();
+console.log(a)

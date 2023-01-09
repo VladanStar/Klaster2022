@@ -1,4 +1,4 @@
-function prolazIliPad() {
+function deljiv() {
   let ocena = document.getElementById("ocena").value;
   let result = document.getElementById("result");
   if(ocena >1 && ocena <= 5 ){

@@ -10,7 +10,7 @@ function deljiv() {
   
   }
   else{
-    alert("Unesite vrednost vecu od 1 i manju od 10")
+    alert("Unesite vrednost vecu od 0 i manju od 11")
   }
    
   }

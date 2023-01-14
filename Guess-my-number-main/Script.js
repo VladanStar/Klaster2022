@@ -71,8 +71,6 @@ document.querySelector(".check").addEventListener("click", function () {
 
 document.querySelector(".again").addEventListener("click", function () {
   screateNumber = Math.trunc(Math.random() * 20 + 1);
-
-
   console.log
     (document.querySelector(".numberGuessing").textContent =
       "Number Guessing");

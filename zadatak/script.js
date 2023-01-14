@@ -3,7 +3,7 @@ let zadatiNumber = Math.round(Math.random() * 20 + 1);
 
 let Scorevalue = 20;
 
-let hiscore=0;
+let hiscore = 0;
 
 document.querySelector('.again').addEventListener('click', function () {
   location.reload();
@@ -11,11 +11,9 @@ document.querySelector('.again').addEventListener('click', function () {
 
 document.querySelector('.check').addEventListener('click', function () {
   const probniBroj = Number(document.querySelector('.guess').value);
-if(probniBroj >20 || probniBroj <1){
-    document.querySelector('.message').innerHTML = 'uneli ste Nekorektan Broj ';
-  
-}
- else if (probniBroj == zadatiNumber) {
+  if (probniBroj > 20 || probniBroj < 1) {
+    document.querySelector('.message').innerHTML = 'Uneli ste Nekorektan Broj ';
+  } else if (probniBroj == zadatiNumber) {
     document.querySelector('.label-highscore').innerHTML =
       'Tacan  Number....Svaka cast pogodili ste';
     document.querySelector('body').style.backgroundColor = '#60b347';
@@ -25,29 +23,29 @@ if(probniBroj >20 || probniBroj <1){
   } else if (probniBroj > zadatiNumber) {
     document.querySelector('.label-highscore').innerHTML = 'TOO High';
     {
-        Scorevalue--;
-  
-        document.querySelector(".score").textContent = Scorevalue;
-        if (Scorevalue <= 0)
-        {
-          document.querySelector(".score").textContent = 0;
-          console.log
-          (document.querySelector(".label-highscore").textContent = "You lost the game");
-        }
+      Scorevalue--;
+
+      document.querySelector('.score').textContent = Scorevalue;
+      if (Scorevalue <= 0) {
+        document.querySelector('.score').textContent = 0;
+
+        document.querySelector('.label-highscore').textContent =
+          'You lost the game';
       }
+    }
   } else if (probniBroj < zadatiNumber) {
     document.querySelector('.label-highscore').innerHTML = 'TOO Low';
   }
   {
     Scorevalue--;
 
-    document.querySelector(".score").textContent = Scorevalue;
-    if (Scorevalue <= 0)
-    {
-      document.querySelector(".score").textContent = 0;
-      console.log
-      (document.querySelector(".label-highscore").textContent = "You lost the game klikni Ponovo button");
+    document.querySelector('.score').textContent = Scorevalue;
+    if (Scorevalue <= 0) {
+      document.querySelector('.score').textContent = 0;
+      console.log(
+        (document.querySelector('.label-highscore').textContent =
+          'You lost the game klikni Ponovo button')
+      );
     }
   }
-
 });

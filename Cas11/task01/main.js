@@ -35,9 +35,9 @@ function calculateBMI() {
   let kg = document.getElementById("kilo").value;
   let visina = document.getElementById("visina").value;
   let bmi = kg / (visina * visina);
-  //   let result = document.getElementById("result");
-  //   result.innerHTML += `${bmi}`;
-  alert("BMI je" + bmi);
+  let result = document.getElementById("result");
+  result.innerHTML += `${bmi}`;
+  // alert("BMI je" + bmi);
   console.log(bmi);
   //    preventDefault();
 }
@@ -53,3 +53,9 @@ switch (dan) {
 }
 age = 34;
 age >= 18 ? console.log("Vi ste punoetin") : console.log("Niste punoletni");
+var a = 12;
+function promena(){
+   var a =23;
+}
+promena();
+console.log(a)

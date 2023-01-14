@@ -1,5 +1,5 @@
 'use strict';
-let zadatiNumber = Math.round(Math.random() * 20 + 1);
+let zadatiNumber = Math.floor(Math.random() * 20 + 1);
 
 let Scorevalue = 20;
 
@@ -12,6 +12,7 @@ document.querySelector('.again').addEventListener('click', function () {
 document.querySelector('.check').addEventListener('click', function () {
   const probniBroj = Number(document.querySelector('.guess').value);
   if (probniBroj > 20 || probniBroj < 1) {
+    Scorevalue--;
     document.querySelector('.message').innerHTML = 'Uneli ste Nekorektan Broj ';
   } else if (probniBroj == zadatiNumber) {
     document.querySelector('.label-highscore').innerHTML =
@@ -49,3 +50,4 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+// console.log(Math.round(-2.49))

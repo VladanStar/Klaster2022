@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Osnovi programiranja</h1>
+    <h2>For petlja</h2>
+
+    <input id="unos" type="text" placeholder="Unos teksta">
+
+    <button onclick="petlja1()">Izracunaj petlju</button>
+    <button onclick="petlja2()">Izracunaj tekst</button>
+    <button onclick="petljaObjekat()">Izracunaj objekat</button>
+    <button onclick="petljaDupla()">Izracunaj objekat, dupla petlja</button>
+
+
+    <p id="demo"></p>
+    <p id="petlja1"></p>
+    <p id="petlja2"></p>
+
+    <script>
+        function petlja1() {
+            let objekat = [12, 22, 30];
+
+            for (let i in objekat) {
+                document.getElementById("demo").innerHTML += objekat[i] + ". ";
+            }
+
+        }
+
+        function petlja2() {
+            let unos = document.getElementById("unos").value;
+
+            for (var i in unos) {
+                if (i % 2) {
+                    document.getElementById("demo").innerHTML += unos[i] + ".";
+                }
+            }
+        }
+
+        function petljaObjekat() {
+            let objekat = [
+                {
+                    ime: "Pera",
+                    godine: "301"
+                },
+                {
+                    ime: "Mika"
+                },
+                {
+                    ime: "Laza",
+                    godine: 150
+                }
+            ];
+
+            for (let i in objekat) {
+                document.getElementById("demo").innerHTML += objekat[i].ime + " ";
+                if (objekat[i].godine == undefined)
+                    document.getElementById("demo").innerHTML += " Nema godine... "
+                else
+                    document.getElementById("demo").innerHTML += "ima " + objekat[i].godine +" godina."
+                
+            }
+        }
+
+        function petljaDupla(){
+            let objekat = [{ // objekat[0][0] = ana objekat[0][1]=10
+                ime:"Ana",
+                godine:10
+            },{
+                ime:"Perislav",
+                godine:15
+            },
+            // i je ceo objekat 
+            {
+                ime:"Milos", // j je samo svojstvo
+                godine:35
+            }
+        ];
+
+        for(let i in objekat){
+            document.getElementById("petlja1").innerHTML += "i = " + i +
+            " objekat je " + objekat[i].ime;
+            for(let j in objekat[i]){
+                document.getElementById("petlja2").innerHTML += " j = " + j+
+             " objekat je " + objekat[i][j] +" ===>";
+            }
+        }
+        }
+
+        //bonus primer... dopisati
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

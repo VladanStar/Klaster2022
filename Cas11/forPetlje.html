@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Osnovi programiranja</h1>
+    <h2>For petlja</h2>
+
+    <input id="unos" type="number" placeholder="Unos broja">
+
+    <button onclick="izracunaj()">Izracunaj petlju</button>
+    <button onclick="izracunaj2()">Izracunaj petlju2</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function izracunaj() {
+            let x = Number(document.getElementById("unos").value);
+
+            for (var i = 0; i <= x; i++) { // za svaku iteraciju promenljivu i uvecavamo za 1 dok god se uslov ne ispuni
+                document.getElementById("demo").innerHTML += i + ", ";
+            }
+        }
+
+        function izracunaj2() {
+            let x = Number(document.getElementById("unos").value);
+
+            for (var i = 20; i > x; i--) { // za svaku iteraciju promenljivu i umanjejemo za 1 dok se uslov ne ispuni
+                if (i == 19) {
+                    document.getElementById("demo").innerHTML += i + "Uslov ispunjen ";
+                } else
+                    document.getElementById("demo").innerHTML += i + ", ";
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

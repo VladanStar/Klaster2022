@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Objekti</h1>
+        <button onclick="pozoviObjekat()">Objekat</button>
+       <br><br>
+        <button onclick="kreirajOsobuPrekoKonstruktora()">
+                Kreiraj Osobu Preko Konstruktora
+        </button>
+        <p id="demo"></p>
+        
+        <script>
+                let osoba = {
+                    ime: "Pera",
+                    prezime: "Peric",
+                    godine: 20,
+                    bojaOciju: "plava",
+                    punoIme: function() {
+                        return this.ime + " " + this.prezime;
+                    }
+                }
+
+                function pozoviObjekat() {
+				// uzimanje informacija iz objekta sa tackom
+                  /*  document.getElementById("demo").innerHTML = 
+                    osoba.ime + " " + osoba.prezime; */
+				
+					// uzimanje informacija iz objekta uz pomoc zagrada
+                /*    document.getElementById("demo").innerHTML = 
+                    osoba['ime'] + " " + osoba['prezime'];*/
+
+					// uzimanje informacija iz objekta uz pomoc zagrada i promenljivih
+                    let ime = "godine";
+                    let prezime = "prezime";
+                    document.getElementById("demo").innerHTML = 
+                    osoba[ime] + " " + osoba[prezime];
+
+					// uzimanje informacija iz objekta uz pomoc fja u okviru samog objekta
+                  /*  document.getElementById("demo").innerHTML =
+                    osoba.punoIme();*/
+                }
+
+                function kreirajOsobuPrekoKonstruktora() {
+  
+                    function Osoba(ime, prezime, godine, bojaOciju) {
+                        this.ime = ime;
+                        this.prezime = prezime;
+                        this.godine = godine;
+                        this.bojaOciju = bojaOciju;
+                        this.punoIme = function() {
+                            return this.ime + " " + this.prezime;
+                        }
+
+                    }
+
+                    let osoba1 = new Osoba("Laza", "Lazic", 20, "Braon");
+                    let osoba2 = new Osoba("Pera", "Lazic", 22, "Braon");
+                    console.log(osoba1);
+                    document.getElementById("demo").innerHTML = 
+                    osoba1.ime + " " + osoba1.prezime + " preko funkcije " + 
+                    osoba1.punoIme();
+
+                    for (const key in osoba1) {
+                        if (osoba1.hasOwnProperty(key)) {
+                            const element = osoba1[key];
+							    // console.log(osoba1[key]);
+								// console.log(key);
+								// console.log("......");
+                        }
+                    }
+
+                    if(osoba1.ime == osoba2.ime && 
+                    osoba1.prezime == osoba2.prezime) {
+                        console.log("iste su osobe");
+                    } else {
+                        console.log("nisu iste osobe");
+                    }
+
+
+					// KOPIRANJE OBJEKTA
+                    let osoba3 = new Object();
+                   
+				   // osoba3 = osoba1 - cuva referencu i kad se promeni jedan objekat menja se i drugi
+
+
+					// zato menjamo kroz petlju jedan po jedan
+                    for (const key in osoba1) {
+                        if (osoba1.hasOwnProperty(key)) {
+                            osoba3[key] = osoba1[key];
+                            
+                        }
+                    }
+                    osoba1.ime = "Pera";
+                    console.log(osoba3,osoba1);
+                    		// END KOPIRANJE OBJEKTA
+
+
+                }
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

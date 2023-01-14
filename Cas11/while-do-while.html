@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Osnovi programiranja</h1>
+    <h2>For petlja</h2>
+
+    <input id="unos" type="number" placeholder="Unos teksta">
+
+    <button onclick="petlja1()">Izracunaj petlju</button>
+
+    <button onclick="petlja2()">Izracunaj petlju</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function petlja1() {
+            let i = 0;
+            let x = Number(document.getElementById("unos").value);
+
+            while (i < x) {
+                i++;
+                document.getElementById("demo").innerHTML += i + ", ";
+            }
+        }
+
+        function petlja2() {
+            let i = 0;
+
+            let x = Number(document.getElementById("unos").value);
+
+            do {
+                i++;
+                document.getElementById("demo").innerHTML += i + " ";
+            } while (i < x)
+        }
+
+    </script>
+</body>
+
+</html>

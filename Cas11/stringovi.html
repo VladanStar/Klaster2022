@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1> Operacije sa stringovima </h1>
+
+    <input type="text" id="nasString">
+    <button onclick="duzinaString()">Duzina stringa</button>
+    <input type="text" id="kriterijum">
+    <button onclick="pozicijaUStringu()">Pozicija u stringu</button>
+    <button onclick="poslednjiElement()">Poslednje pojavljivanje karaktera u stringu</button>
+    <button onclick="sliceFunkcija()">Slice funkcija</button>
+    <button onclick="replaceString()">Replace funkcija</button>
+    <button onclick="stringToNiz()">String u niz stringova</button>
+
+    <p id="rezultat"></p>
+
+    
+
+    <script>
+
+        //metoda za vracanje duzine string  let mojString= "demo" mojString.length 
+        function duzinaString() {
+            let nasString = document.getElementById("nasString").value;
+            document.getElementById("rezultat").innerHTML = nasString.length;
+            odstampajSlovoPoSlovo();
+        }
+
+        function odstampajSlovoPoSlovo(){
+            let mojaDUzina = "34";
+            // mojaDuzina.length pristupanje duzini
+            let duzina = document.getElementById("nasString").value.length;
+            let tekst = document.getElementById("nasString").value;
+            document.getElementById("rezultat").innerHTML += " za slova = ";
+            for(let i=0; i<duzina;i++){
+                document.getElementById("rezultat").innerHTML += tekst[i] + ', '
+            }
+            // for(let i=0; i<tekst.length;i++){ //identican uslov
+            //     document.getElementById("rezultat").innerHTML += tekst[i] + ', '
+            // }
+        }
+
+        function pozicijaUStringu(){
+            let nasString = document.getElementById("nasString").value;
+
+            let kriterijum = document.getElementById("kriterijum").value;
+
+            let pozicija = nasString.indexOf(kriterijum);
+            // let pozicija = nasString.indexOf("u"); zakucan kriterijum 
+
+            document.getElementById("rezultat").innerHTML = kriterijum + ""+
+            " se pojavljuje na " + pozicija + " poziciji u stringu " + nasString
+        }
+
+        function poslednjiElement(){
+            let nasString = document.getElementById("nasString").value;
+            
+            let poslednjaPozicija = nasString.lastIndexOf("a");
+
+            if(poslednjaPozicija ===-1){
+                document.getElementById("rezultat").innerHTML = "slovo a se ne pojavljuje u stringu";
+            }else {
+            document.getElementById("rezultat").innerHTML = "slovo a poslednji put" +
+            "pojavljuje na poziciji " + poslednjaPozicija +"u nasem stringu " + nasString;
+            }
+        }
+
+        function sliceFunkcija(){
+            let nasString = document.getElementById("nasString").value;
+
+            nasString = nasString.toLowerCase(); //pretvara karaktere u mala slova
+            // nasString = nasString.toUpperCase(); //pretvara karaktere u velike slova
+
+            let rezultat = nasString.slice(2,5);
+            // od ispunjenja uslova a, funkcija slice vraca sve do uslova pojave b
+            // let rezultat = nasString.slice(broj indexa pocetka,broj kraja preseka);
+
+            document.getElementById("rezultat").innerHTML = rezultat.toUpperCase() + " Isecen string " + rezultat;
+        }
+
+        function replaceString(){
+            let nasString = document.getElementById("nasString").value;
+
+            // let rezultat = nasString.replace("kivi","banana");
+
+            let kriterijum = document.getElementById("kriterijum").value;
+            let rezultat = nasString.replace(kriterijum,"banana");
+
+
+            document.getElementById("rezultat").innerHTML = rezultat + " zamenjen string";
+        }
+
+        function stringToNiz(){
+            let nasString = document.getElementById("nasString").value;
+            //let rezultat = nasString.split(","); //ovde definisemo karakter za podelu
+            // let rezultat = nasString.split("a");
+             //ovde definisemo karakter za podelu
+            let kriterijum = document.getElementById("kriterijum").value;
+            // let rezultat = nasString.split(kriterijum);
+
+            console.log(rezultat);
+        }
+
+    </script>
+</body>
+
+</html>

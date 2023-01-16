@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/styles/app.css" />
     <link rel="stylesheet" href="./assets/styles/main.css" />
     <link rel="stylesheet" href="assets/styles/share-place.css" />
-    <script src="assets/scripts/SharePlace.js" defer></script>
+    <!-- <script src="assets/scripts/SharePlace.js" defer></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYmQqqoGa-vY_SfcRHFL63p074Lrg_7Gk&callback=initMap"></script>
   </head>
   <body>
@@ -51,8 +51,9 @@
         <input type="text"  title="$"/>
         <button type="submit">Find Place</button>
       </form>
-      <button id="locate-btn" onclick="pokazi()">Get Current Location</button>
+      <button id="locate-btn" onclick="pokazi()" type="button">Get Current Location</button>
     </section>
-    <script src="../src/MyPlace.js"></script>
+
+    <script type="text/javascript" src="../src/MyPlace.js"></script>
   </body>
 </html>

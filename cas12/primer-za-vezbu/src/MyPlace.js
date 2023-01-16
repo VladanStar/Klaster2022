@@ -1,4 +1,6 @@
-function pokazi() {
+
+ function pokazi(){
+  console.log("Vladan");
   let x = navigator.geolocation;
   x.getCurrentPosition(success, failure);
   function success(position) {
